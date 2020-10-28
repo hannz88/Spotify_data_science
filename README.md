@@ -45,6 +45,13 @@ Once you get both the `Client ID` and `Client Secret`, put them both in a json f
 Spotify has URI(Unique Resource Identifier) for any track, album, playlist etc. For the purpose of analysing the playlist, you will need to get the URI for each playlist. The URI helps to communicate with Spotify API and also retrieving the information.
 
 To get the URI:
+    - Go to the three dots icon
+    - Click on `Share`
+    - Click `Copy Spotify URI` 
+    
+<p align="center">
+    <img src="https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/uri.png" alt="Screenshot of getting the Spotify uri">
+</p>
 
 Once you get the URI, put them into json file again with other keys and values for that playlist. I've placed them in a file called `playlists_like_dislike.json`, which looks like this:
 
