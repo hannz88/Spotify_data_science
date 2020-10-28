@@ -87,7 +87,10 @@ On top of that, Spotify also has a a number of audio attributes for each track, 
 ## Comparing playlists
 I analysed two playlists that I listen in different circumstances. One is a playlist for meditation and the other one is for when I am working out.
 
-![Radar chart comparing two playlists](https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/radarchart.png)
+<p align="center">
+    ![Radar chart comparing two playlists](https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/radarchart.png)
+</p>
+
 From the radar chart, it's clear to see that there are differences in different features between the two playlists. Meditation playlist scored quite high in acousticness and instrumentalness while workout playlist scored higher in energy, danceability, and valence. Workout playlist is slightly higher in speechiness, tempo, lineliness and loudness.
 
 I was surprised by the small differences in speechiness. Meditation tracks barely have any voice in it, if at all but workout tracks are all just songs. So, it turns out that high score in speechiness means that a track is composed mostly of spoken words, e.g. talk show, audio books. If both speech and music are present simultaneously, it'll have lower score than those of purely just spoken words.
