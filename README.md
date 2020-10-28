@@ -88,7 +88,7 @@ On top of that, Spotify also has a a number of audio attributes for each track, 
 I analysed two playlists that I listen in different circumstances. One is a playlist for meditation and the other one is for when I am working out.
 
 <p align="center">
-    ![Radar chart comparing two playlists](https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/radarchart.png)
+    <img src="https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/radarchart.png" alt="Radar chart comparing two playlists">
 </p>
 
 From the radar chart, it's clear to see that there are differences in different features between the two playlists. Meditation playlist scored quite high in acousticness and instrumentalness while workout playlist scored higher in energy, danceability, and valence. Workout playlist is slightly higher in speechiness, tempo, lineliness and loudness.
