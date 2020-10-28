@@ -59,8 +59,7 @@ For each playlist, other than the `uri`, I've also included `like`  for whether 
 ![Gif of Feels](https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/feels.gif)
 
 ## Accessing the features and other attributes
-[(Skip)](#comparing-playlists)
-This part is bit lengthy. It's an explanation about the different features for each of the track. Click on `Skip` if you prefer to go to the next part. For each playlist, you could get the track details like the artists, ID's and the titles. Each track of have unique attributes called features. The features and description (from [Spotify](https://developer.spotify.com/documentation/web-api/reference/tracks/get-several-audio-features/)) for each track that are used for analysis later are:
+This part is bit lengthy. It's an explanation about the different features for each of the track. Click on [(Skip)](#comparing-playlists) if you prefer to go to the next part. For each playlist, you could get the track details like the artists, ID's and the titles. Each track of have unique attributes called features. The features and description (from [Spotify](https://developer.spotify.com/documentation/web-api/reference/tracks/get-several-audio-features/)) for each track that are used for analysis later are:
 
 - Danceability: 
     - Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
@@ -83,9 +82,18 @@ This part is bit lengthy. It's an explanation about the different features for e
 - Tempo: 
     - The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.
     
-On top of that, Spotify also has a a number of audio attributes for each track, namely bars, beats, sections, tatum and segments. Tatums and beats provide the same information as bars, so they are not included here.
+On top of that, Spotify also has a a number of audio attributes for each track, namely bars, beats, sections, tatum and segments. I didn't analyse them but here's the [link](https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-analysis/) if you want more information.
 
 ## Comparing playlists
+I analysed two playlists that I listen in different circumstances. One is a playlist for meditation and the other one is for when I am working out.
+
+![Radar chart comparing two playlists](https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/radarchart.png)
+From the radar chart, it's clear to see that there are differences in different features between the two playlists. Meditation playlist scored quite high in acousticness and instrumentalness while workout playlist scored higher in energy, danceability, and valence. Workout playlist is slightly higher in speechiness, tempo, lineliness and loudness.
+
+I was surprised by the small differences in speechiness. Meditation tracks barely have any voice in it, if at all but workout tracks are all just songs. So, it turns out that high score in speechiness means that a track is composed mostly of spoken words, e.g. talk show, audio books. If both speech and music are present simultaneously, it'll have lower score than those of purely just spoken words.
+
+Let's have a look at them in the form of bar chart.
+
 
 ## Further analysis
 
