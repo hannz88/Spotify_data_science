@@ -15,16 +15,16 @@ This is data science side-project. Firstly, I gathered the information and track
 
 ## Table of content
 
-- [Getting keys for Spotipy](getting-keys-for-spotipy)
-- [Accessing the URI](accessing-the-uri)
-- [Accessing the features and other attributes](accessing-the-features-and-other-attributes)
-- [Comparing playlists](comparing-playlists)
-- [Further analysis](further-analysis)
-    - [Homogeneity of variance](homogeneity-of-variance)
-    - [Normality of variables](normality-of-variables)
-    - [Correlation between variables](correlation-between-variables)
-    - [Hypothesis testing](hypothesis-testing)
-- [Conclusion](conclusion)
+- [Getting keys for Spotipy](#getting-keys-for-spotipy)
+- [Accessing the URI](#accessing-the-uri)
+- [Accessing the features and other attributes](#accessing-the-features-and-other-attributes)
+- [Comparing playlists](#comparing-playlists)
+- [Further analysis](#further-analysis)
+    - [Homogeneity of variance](#homogeneity-of-variance)
+    - [Normality of variables](#normality-of-variables)
+    - [Correlation between variables](#correlation-between-variables)
+    - [Hypothesis testing](#hypothesis-testing)
+- [Conclusion](#conclusion)
 
 ## Getting keys for Spotify
 As the codes use the Spotipy library, make sure you have Spotipy installed first. All methods in Spotipy requires authorization using `Client ID` and `Client Secret` which is available through [Spotify's Developer site](https://developer.spotify.com/dashboard/login). All you have to do is create an account, create a new app and then obtain the `Client ID` and `Client Secret`.
