@@ -45,10 +45,9 @@ Once you get both the `Client ID` and `Client Secret`, put them both in a json f
 Spotify has URI(Unique Resource Identifier) for any track, album, playlist etc. For the purpose of analysing the playlist, you will need to get the URI for each playlist. The URI helps to communicate with Spotify API and also retrieving the information.
 
 To get the URI:
+
     - Go to the three dots icon
-    
     - Click on `Share`
-    
     - Click `Copy Spotify URI` 
     
 <p align="center">
