@@ -28,7 +28,7 @@ This is data science side-project. Firstly, I gathered the information and track
 ## Getting keys for Spotify
 As the codes use the Spotipy library, make sure you have Spotipy installed first. All methods in Spotipy requires authorization using `Client ID` and `Client Secret` which is available through [Spotify's Developer site](https://developer.spotify.com/dashboard/login).
 
-![Screenshot of Spotify Developer Site](https://github.com/hannz88/Spotify_data_science/blob/master/Graphs/spotifydev.png=800x400)
+![Screenshot of developer site](https://github.com/hannz88/Spotify_data_science/blob/master/Graphs/spotifydev.png)
 
 ## Accessing the features and other attributes
 
