@@ -155,7 +155,7 @@ The graphs show that the distribution for the data are far from normal. As per S
 When a dataset doesn't have normal disribution, it is common to tranform them so that you can use parametric tests on them. There are many ways to do this. For example, you could use log transformation, square root transformation, box cox transformation etc. Here, I tried MinMaxScaler from sklearn, log transformation, square and square root transformation (separately but I've overwritten them so they're no longer in the notebook), and box cox transformation. However, none has given any satisfactory results, as seen in the graphical distribution below. So, I decided to use non-parametric test instead.
 
 <p align="center">
-    <img src="https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/distrbution_post.png" alt="Distribution for after log transformation">
+    <img src="https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/distribution_post.png" alt="Distribution for after log transformation">
 </p>
 
 ### Hypothesis testing
