@@ -19,3 +19,29 @@ This is data science side-project. Firstly, I gathered the information and track
 - [Accessing the features and other attributes](accessing-the-features-and-other-attributes)
 - [Comparing playlists](comparing-playlists)
 - [Further analysis](further-analysis)
+    - [Homogeneity of variance](homogeneity-of-variance)
+    - [Normality of variables](normality-of-variables)
+    - [Correlation between variables](correlation-between-variables)
+    - [Hypothesis testing](hypothesis-testing)
+- [Conclusion](conclusion)
+
+## Getting keys for Spotify
+As the codes use the Spotipy library, make sure you have Spotipy installed first. All methods in Spotipy requires authorization using `Client ID` and `Client Secret` which is available through * [Spotify's Developer site](https://developer.spotify.com/dashboard/login).
+
+![Screenshot of Spotify Developer Site](https://github.com/hannz88/Spotify_data_science/blob/master/Graphs/spotifydev.png)
+
+## Accessing the features and other attributes
+
+## Comparing playlists
+
+## Further analysis
+
+### Homogeneity of variance
+
+### Normality of variables
+
+### Correlation between variables
+
+### Hypothesis testing
+
+## Conclusion
