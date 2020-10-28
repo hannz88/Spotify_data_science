@@ -46,9 +46,9 @@ Spotify has URI(Unique Resource Identifier) for any track, album, playlist etc. 
 
 To get the URI:
 
-    * Go to the three dots icon
-    * Click on `Share`
-    * Click `Copy Spotify URI` 
+ * Go to the three dots icon
+ * Click on `Share`
+ * Click `Copy Spotify URI` 
     
 <p align="center">
     <img src="https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/uri.png" alt="Screenshot of getting the Spotify uri">
