@@ -219,7 +219,7 @@ Difference in Valence is significant (p=7.969072864542664e-27).
 This has been a fun project to do! A brief recap, I've selected a few playlist from Spotify. From these selections, I've picked Meditation and Workout playlist to analyze them. Spotify have different features for each track like energy, acousticness, etc. I analyze the differences between the two playlist using graphical means. Then, I tested some assumptions of the data in order to decide which statistical test to use in order to quantifiably test the differences. The datasets weren't normally distributed so I tried to transform the data using a few methods. None of them gave any satifying results. Therefore, I resorted to non-parametric test instead, specifically sign test. The test shows that the two playlist are different in terms of Danceability, Energy, Loudness, Speechiness, Acousticness, Instrumentalness and Valence. The data science-y part might be done for now but there's a few steps that I'm thinking of taking this project to. If you have any idea, let me know!
 
 ## Machine Learning
-So, to train ml models to predict the likeness of a song, I've aggregated track data from 8 different playlists including a mix of playlist that I like and dislike. Since the data is labelled, I'll be using supervised machine learning. Fistly, I used Logistic Regression and K-nearest Neighbour (KNN) from sklearn. Then, I employed Pytorch as a classifier. 
+So, to train ml models to predict the likeness of a song, I've aggregated track data from 8 different playlists including a mix of playlist that I like and dislike. Since the data is labelled, I'll be using supervised machine learning. Fistly, I used Logistic Regression (LR) and K-nearest Neighbour (KNN) from sklearn. Then, I employed Pytorch as a classifier. 
 
 ### Data Distribution
 First, let's have a look at the shape of the distribution for the variables that are used.
@@ -240,7 +240,7 @@ Sklearn, also known as Scikit-learn, is a machine learning library in Python. Th
 
 Other than the two algorithms, I also used `classification_report` from sklearn which is a pretty neat tool as it tells you the accuracy, precision, recall, f1-score, etc. Pretty neat, huh?
 
-One more thing, it wouldn't be good practice to train your model on the same set of data and then only to test it. Imagine building a classifier for food type. Then, train it on sausage only. What will happen to the model? It'll only ever 
+One more thing, it wouldn't be good practice to train and test your model on the same set of data. Imagine building a classifier for food type. Then, train it on sausage only. What will happen to the model? It'll only ever 
 be able to tell you if it's sausage or not. Not useful right? 
 
 <p align="center">
@@ -277,4 +277,20 @@ KNN:
 | macro avg | 0.52 | 0.52 | 0.51 | 157 |
 | weighted avg | 0.57 | 0.61 | 0.58 | 157 |
 
+Accuracy is often used as a metric to judge a model. It's easy to see why: it's a measurement of how accurate your model is. However, the caveat is that it's not useful in imbalanced dataset. And it also depends on what you're testing. For example, if the model has high accuracy in testing Neg virus-infected people but what matters are the Pos virus-infected ones. People have used other measurments such as the precision, recall and [f1-score](https://en.wikipedia.org/wiki/F-score). All of them are useful but it depends on several factors. Here, instead of settling for one. We'll look at the overall. In general, Logistic Regression has better scores than KNN, so we'll use Logistic Regression.
 
+#### Prediction
+LR was selected to make the final prediction and the results is as below.
+|  | Precision | Recall | f1-score | support |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| 0 | 0.91 | 0.98 | 0.94 | 341 |
+| 1 | 0.95 | 0.81 | 0.88 | 181 |
+|   |   |   |   |   |
+| accuracy |  |  | 0.92 | 522 |
+| macro avg | 0.93 | 0.90 | 0.91 | 522 |
+| weighted avg | 0.92 | 0.92 | 0.92 | 522 |
+
+The overall scores look pretty neat. The accuracy was 0.92 and the overall scores look pretty good to me. Let's try Pytorch!
+
+### Pytorch
+(readme in progress, codes in notebook)
