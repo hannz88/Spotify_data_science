@@ -220,10 +220,10 @@ This has been a fun project to do! A brief recap, I've selected a few playlist f
 ## Machine Learning
 So, to train ml models to predict the likeness of a song, I've aggregated track data from 8 different playlists including a mix of playlist that I like and dislike. Since the data is labelled, I'll be using supervised machine learning specifically Logistic Regression and K-nearest Neighbour (KNN). Here's an ultra-brief explanation of what the algorithms are:
 
-                                | Algorithms  | Description |
-                                | ------------- | ------------- |
-                                | Logistic Regression  | Predicts discrete values for a set of independent variables using logit function  |
-                                | KNN  | Assumes that similar objects exist in close proximity and computes distances between objects to assign them into groups  |
+| Algorithms  | Description |
+| ------------- | ------------- |
+| Logistic Regression  | Predicts discrete values for a set of independent variables using logit function  |
+| KNN  | Assumes that similar objects exist in close proximity and computes distances between objects to assign them into groups  |
 
 
 
