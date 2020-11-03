@@ -14,7 +14,7 @@
 ## Introduction
 This is data science side-project. Firstly, I gathered the information and track details of a few playlists from Spotify. The details are accessed using Spotipy which have wrapper functions for Spotify's RESTfuls API. The details are then used to analyze the difference between some of them. Prior to using Spotipy, remember to get the client id and client secret from Spotify Developer's Website.
 
-After the initial analysis, I used machine learning techniques to train models for predicting if a user will like a song in a playlist using the dataset obtained via Spotify API. Click on `Machine Learning` section to find out!
+After the initial analysis, I used machine learning techniques to train models for predicting if a user will like a song in a playlist using the dataset obtained via Spotify API. Click on `Machine Learning` section to find out more!
 
 ## Table of content
 
@@ -216,3 +216,17 @@ Difference in Valence is significant (p=7.969072864542664e-27).
 [Back to top](#table-of-content)
 
 This has been a fun project to do! A brief recap, I've selected a few playlist from Spotify. From these selections, I've picked Meditation and Workout playlist to analyze them. Spotify have different features for each track like energy, acousticness, etc. I analyze the differences between the two playlist using graphical means. Then, I tested some assumptions of the data in order to decide which statistical test to use in order to quantifiably test the differences. The datasets weren't normally distributed so I tried to transform the data using a few methods. None of them gave any satifying results. Therefore, I resorted to non-parametric test instead, specifically sign test. The test shows that the two playlist are different in terms of Danceability, Energy, Loudness, Speechiness, Acousticness, Instrumentalness and Valence. The data science-y part might be done for now but there's a few steps that I'm thinking of taking this project to. If you have any idea, let me know!
+
+## Machine Learning
+So, to train ml models to predict the likeness of a song, I've aggregated track data from 8 different playlists including a mix of playlist that I like and dislike. Since the data is labelled, I'll be using supervised machine learning specifically Logistic Regression and K-nearest Neighbour (KNN). Here's an ultra-brief explanation of what the algorithms are:
+
+                                | Algorithms  | Description |
+                                | ------------- | ------------- |
+                                | Logistic Regression  | Predicts discrete values for a set of independent variables using logit function  |
+                                | KNN  | Assumes that similar objects exist in close proximity and computes distances between objects to assign them into groups  |
+
+
+
+
+
+
