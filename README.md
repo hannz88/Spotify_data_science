@@ -7,6 +7,7 @@
 ![Uses Numpy](https://img.shields.io/badge/uses-numpy-yellow)
 ![Uses Pandas](https://img.shields.io/badge/uses-Pandas-green)
 ![Machine Learning](https://img.shields.io/badge/Machine%20-Learning-blue)
+![Uses Pytorch](https://img.shields.io/badge/uses-pytorch-magenta)
 ![Uses Matplotlib](https://img.shields.io/badge/uses-matplotlib-indigo)
 ![Ideas Welcome](https://img.shields.io/badge/ideas-welcome-purple)
 
@@ -218,13 +219,44 @@ Difference in Valence is significant (p=7.969072864542664e-27).
 This has been a fun project to do! A brief recap, I've selected a few playlist from Spotify. From these selections, I've picked Meditation and Workout playlist to analyze them. Spotify have different features for each track like energy, acousticness, etc. I analyze the differences between the two playlist using graphical means. Then, I tested some assumptions of the data in order to decide which statistical test to use in order to quantifiably test the differences. The datasets weren't normally distributed so I tried to transform the data using a few methods. None of them gave any satifying results. Therefore, I resorted to non-parametric test instead, specifically sign test. The test shows that the two playlist are different in terms of Danceability, Energy, Loudness, Speechiness, Acousticness, Instrumentalness and Valence. The data science-y part might be done for now but there's a few steps that I'm thinking of taking this project to. If you have any idea, let me know!
 
 ## Machine Learning
-So, to train ml models to predict the likeness of a song, I've aggregated track data from 8 different playlists including a mix of playlist that I like and dislike. Since the data is labelled, I'll be using supervised machine learning specifically Logistic Regression and K-nearest Neighbour (KNN). Here's an ultra-brief explanation of what the algorithms are:
+So, to train ml models to predict the likeness of a song, I've aggregated track data from 8 different playlists including a mix of playlist that I like and dislike. Since the data is labelled, I'll be using supervised machine learning. Fistly, I used Logistic Regression and K-nearest Neighbour (KNN) from sklearn. Then, I employed Pytorch as a classifier. 
+
+### Data Distribution
+First, let's have a look at the shape of the distribution for the variables that are used.
+
+<p align="center">
+    <img src="https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/Distribution_variables_500.png" alt="Distribution for larger dataset">
+</p>
+
+From the distribution of the different variables, it's fairly obvious that the songs I like have rather low scores in terms of danceability, energy, loudness and tempo. Songs that I'm into have rather high scores in instrumentalness and acousticness. I have a suspicion that this might caused by the meditation playlist. It looks like there are not much differences with the tracks that I dislike in terms of duration and sections. I'm hesitant to comment on the differences in tempo, bars and segments as there are quite a large amount of overlap. Normally, I would normalise the variables but we're not doing hypothesis testing atm so we'll leave them be, for now.
+
+### Sklearn
+Sklearn, also known as Scikit-learn, is a machine learning library in Python. There are many tools in there. Here's an ultra-brief explanation of the algorithms I used:
 
 | Algorithms  | Description |
 | ------------- | ------------- |
 | Logistic Regression  | Predicts discrete values for a set of independent variables using logit function  |
 | KNN  | Assumes that similar objects exist in close proximity and computes distances between objects to assign them into groups  |
 
+Other than the two algorithms, I also used `classification_report` from sklearn which is a pretty neat tool as it tells you the accuracy, precision, recall, f1-score, etc. Pretty neat, huh?
+
+One more thing, it wouldn't be good practice to train your model on the same set of data and then only to test it. Imagine building a classifier for food type. Then, train it on sausage only. What will happen to the model? It'll only ever 
+be able to tell you if it's sausage or not. Not useful right? 
+
+<p align="center">
+    <img src="https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/hotdog.gif" alt="Gif of hotdog Identifier">
+</p>
+
+So, to circumvent this pitfall, I used `train_test_split` from `sklearn.model_selection`.
+
+```
+from sklearn.model_selection import train_test_split
+## x are the independent variables
+## y are the dependent variables, ie what you're trying to predict
+x_train, x_test, y_train, y_test = train_test_split(x,y, train_size=0.7, test_size=0.3, random_state=0)
+```
+
+#### 
 
 
 
