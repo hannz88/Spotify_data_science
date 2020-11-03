@@ -256,9 +256,16 @@ from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x,y, train_size=0.7, test_size=0.3, random_state=0)
 ```
 
-#### 
-
-
+#### Testing results
+Logistic regression:
+|  | Precision | Recall | f1-score | support |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| 0 | 0.91 | 0.99 | 0.95 | 104 |
+| 1 | 0.98 | 0.81 | 0.89 | 53 |
+|  |  |  |  |  |
+| accuracy |  |  | 0.93 | 157 |
+| macro avg | 0.94 | 0.90 | 0.92 | 157 |
+| weighted avg | 0.93 | 0.93 | 0.93 | 157 |
 
 
 
