@@ -2,13 +2,13 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-![Python Version](https://img.shields.io/badge/Python-3.7.4-brightgreen)
-![Uses Json](https://img.shields.io/badge/uses-json-success)
-![Uses Numpy](https://img.shields.io/badge/uses-numpy-informational)
-![Uses Pandas](https://img.shields.io/badge/uses-Pandas-yellow)
-![Machine Learning](https://img.shields.io/badge/Machine%20-Learning-important)
-![Uses Matplotlib](https://img.shields.io/badge/uses-matplotlib-purple)
-![Ideas Welcome](https://img.shields.io/badge/ideas-welcome-orange)
+![Python Version](https://img.shields.io/badge/Python-3.7.4-red)
+![Uses Json](https://img.shields.io/badge/uses-json-orange)
+![Uses Numpy](https://img.shields.io/badge/uses-numpy-yellow)
+![Uses Pandas](https://img.shields.io/badge/uses-Pandas-green)
+![Machine Learning](https://img.shields.io/badge/Machine%20-Learning-blue)
+![Uses Matplotlib](https://img.shields.io/badge/uses-matplotlib-indigo)
+![Ideas Welcome](https://img.shields.io/badge/ideas-welcome-purple)
 
 
 ## Introduction
