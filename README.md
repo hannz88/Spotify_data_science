@@ -14,7 +14,7 @@
 ## Introduction
 This is data science side-project. Firstly, I gathered the information and track details of a few playlists from Spotify. The details are accessed using Spotipy which have wrapper functions for Spotify's RESTfuls API. The details are then used to analyze the difference between some of them. Prior to using Spotipy, remember to get the client id and client secret from Spotify Developer's Website.
 
-Update: I've used machine learning techniques to train and predict if a user will like a song in a playlist using the dataset obtained via Spotify API. Click on `Machine Learning` section to find out!
+After the initial analysis, I used machine learning techniques to train models for predicting if a user will like a song in a playlist using the dataset obtained via Spotify API. Click on `Machine Learning` section to find out!
 
 ## Table of content
 
@@ -28,6 +28,7 @@ Update: I've used machine learning techniques to train and predict if a user wil
     - [Correlation between variables](#correlation-between-variables)
     - [Hypothesis testing](#hypothesis-testing)
 - [Conclusion](#conclusion)
+- [Machine Learning](#machine-learning)
 
 ## Getting keys for Spotify
 [Back to top](#table-of-content)
