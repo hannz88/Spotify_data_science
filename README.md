@@ -277,7 +277,13 @@ KNN:
 | macro avg | 0.52 | 0.52 | 0.51 | 157 |
 | weighted avg | 0.57 | 0.61 | 0.58 | 157 |
 
-Accuracy is often used as a metric to judge a model. It's easy to see why: it's a measurement of how accurate your model is. However, the caveat is that it's not useful in imbalanced dataset. And it also depends on what you're testing. For example, if the model has high accuracy in testing Neg virus-infected people but what matters are the Pos virus-infected ones. People have used other measurments such as the precision, recall and [f1-score](https://en.wikipedia.org/wiki/F-score). All of them are useful but it depends on several factors. Here, instead of settling for one. We'll look at the overall. In general, Logistic Regression has better scores than KNN, so we'll use Logistic Regression.
+Accuracy is often used as a metric to judge a model. It's easy to see why: it's a measurement of how accurate your model is. However, the caveat is that it's not useful in imbalanced dataset. And it also depends on what you're testing. For example, if the model has high accuracy in testing Neg virus-infected people but what matters are the Pos virus-infected ones. People have used other measurments such as the precision, recall and [f1-score](https://en.wikipedia.org/wiki/F-score). All of them are useful but it depends on several factors. For example, what are you testing? Is there an imbalanced dataset problem? 
+
+Imbalanced dataset is common. It happens when you have more datapoints for one class over the other. It's usually more of a problem when you have 90% of the datapoints from one class and only 10% of datapoints from the other. Even if your model managed to predict 90% of the majority class, it hasn't learnt anything really. In this particular dataset, the number of datapoints for both classes are not 50/50 as could be seen from the graph below, but it's not as extreme as 90/10 either. To err on the side of caution, I decided that f1-score is my priority, especially when it comes to predicting like (labelled "1") tracks. LR's f1 for class 1 is 0.89 which is considerably higher than that for KNN. Moreover, all other numbers for LR is higher than those from KNN. It's obvious that LR is the better model here. Note: there are other ways to handle imbalanced dataset.
+
+<p align="center">
+    <img src="https://github.com/hannz88/Spotify_data_science/blob/main/Graphs/count_value.png" alt="Picture of different classes">
+</p>
 
 #### Prediction
 LR was selected to make the final prediction and the results is as below.
