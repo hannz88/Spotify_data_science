@@ -297,6 +297,3 @@ LR was selected to make the final prediction and the results is as below.
 | weighted avg | 0.92 | 0.92 | 0.92 | 522 |
 
 The overall scores look pretty neat. The accuracy was 0.92 and the overall scores look pretty good to me. Let's try Pytorch!
-
-### Pytorch
-(readme in progress, codes in notebook)
