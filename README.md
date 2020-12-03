@@ -296,4 +296,4 @@ LR was selected to make the final prediction and the results is as below.
 | macro avg | 0.93 | 0.90 | 0.91 | 522 |
 | weighted avg | 0.92 | 0.92 | 0.92 | 522 |
 
-The overall scores look pretty neat. The accuracy was 0.92 and the overall scores look pretty good to me. Let's try Pytorch!
+The overall scores look pretty neat. The accuracy was 0.92 and the overall scores look pretty good to me. Let's try Pytorch next time!
